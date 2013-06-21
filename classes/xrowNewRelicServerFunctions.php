@@ -11,7 +11,7 @@ class xrowNewRelicServerFunctions extends ezjscServerFunctions
     public static function newrelic()
     {
 
-        $url = 'https://d7p9czrvs14ne.cloudfront.net/11/eum/rum.js';
+        $url = 'https://rpm-images.newrelic.com/42/eum/rum.js';
         if ( function_exists( 'curl_init' ) )
         {
             $ch = curl_init();
