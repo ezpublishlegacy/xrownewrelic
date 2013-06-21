@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<software>
+    <metadata>
+        <name>New Relic Extension</name>
+        <version>1.0</version>
+        <copyright>Copyright (C) 2013 xrow GmbH</copyright>
+        <license>GPL</license>
+    </metadata>
+
+    <dependencies>
+        <requires>
+            <extension name="ezjscore" />
+        </requires>
+    </dependencies>
+</software>
