@@ -4,8 +4,8 @@ xrownewrelic
 Integration with New Relic for eZ Publish
 
 
-*Setup your config.php
-*Enter the two operator into your layout.
+* Setup your config.php
+* Enter the two operator into your layout.
 
 Place at start of the header tag:
 
