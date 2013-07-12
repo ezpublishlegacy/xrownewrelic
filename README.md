@@ -31,4 +31,4 @@ Sample:
     </html>
 
 
-[For more Information contact](http://www.xrow.com)
+[For more information contact xrow GmbH](http://www.xrow.com)
