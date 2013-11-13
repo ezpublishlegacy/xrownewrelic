@@ -1,0 +1,19 @@
+// extend your config.php with this code
+
+if( extension_loaded( 'newrelic' ) )
+{
+    if( php_sapi_name() == 'cli' ) 
+    {
+        newrelic_background_job();
+    }
+    else
+    {
+        newrelic_set_appname ( "eZ Publish", 'abcdefgh' );
+        $url = (empty($_SERVER['HTTP_X_FORWARDED_PROTO'])) ? 'https://' : 'http' . '://';
+        $url .= $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+        $url .= (empty($_SERVER['QUERY_STRING'])) ? '' : '?' . $_SERVER['QUERY_STRING'];
+        newrelic_name_transaction ( $url );
+        newrelic_disable_autorum();
+        newrelic_capture_params ( 'on' );
+    }
+}
